@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+  <title>Alma Mater - Registration Form</title>
+  <link rel="stylesheet" href="CSS/webStyles.css">
+  <link rel="icon" type="image/png" href="pix/Webtech2.png">
+  <style>
+    main{
+      width:83vw ;
+    }
+    aside{
+      height:165vh ;
+    }
+  </style>
+</head>
+<body>
+  <header>
+  <h1>Alma Mater Registration Form</h1>
+  <p>Please fill in the details below to register as a member of your alma mater.</p>
+  </header>
+  <nav>
+    <ul>
+          <a href="index.html"><li>Home</li></a>
+          <a href="meals.html"><li>Meals</li></a>
+          <a href="results.html"><li>Results</li></a>
+          <a href="schoolform.html"><li>SchoolForm</li></a>
+          <a href="timetable.html"><li>Timetable</li></a>
+          
+        </ul>
+  </nav>
+  <aside></aside>
+  <main>
+
+  <form action="#" method="post" enctype="multipart/form-data" autocomplete="on">
+
+    <fieldset>
+      <legend>Personal Details</legend>
+
+      <label for="full_name">Full name (First Middle Last):</label><br>
+      <input type="text" id="full_name" name="full_name" required placeholder="e.g. Matilda Korlekuor Dapaah"><br><br>
+
+      <label for="nick_name">Nickname (if any):</label><br>
+      <input type="text" id="nick_name" name="nick_name" placeholder="e.g. Tilly"><br><br>
+
+      <label>Gender:</label><br>
+      <input type="radio" id="gender_f" name="gender" value="Female">
+      <label for="gender_f">Female</label>
+      <input type="radio" id="gender_m" name="gender" value="Male">
+      <label for="gender_m">Male</label>
+      <input type="radio" id="gender_o" name="gender" value="Other">
+      <label for="gender_o">Other</label><br><br>
+
+      <label for="phone">Phone number:</label><br>
+      <input type="tel" id="phone" name="phone" placeholder="e.g. +233 24 000 0000"><br><br>
+
+      <label for="email">Email address:</label><br>
+      <input type="email" id="email" name="email" placeholder="you@example.com"><br><br>
+
+      <label for="address">Home town / Address:</label><br>
+      <input type="text" id="address" name="address" placeholder="Town, Region"><br>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Basic (Former) School</legend>
+
+      <label for="former_school">Former/Basic school attended:</label><br>
+      <input type="text" id="former_school" name="former_school" placeholder="Name of basic school"><br><br>
+
+      <label for="region_basic_school">Region of basic school:</label><br>
+      <select id="region_basic_school" name="region_basic_school">
+        <option value="">-- Select region --</option>
+        <option>Greater Accra</option>
+        <option>Ashanti</option>
+        <option>Northern</option>
+        <option>Volta</option>
+        <option>Eastern</option>
+        <option>Central</option>
+        <option>Western</option>
+        <option>Upper East</option>
+        <option>Upper West</option>
+        <option>Oti</option>
+        <option>Bono</option>
+        <option>Ahafo</option>
+        <option>Bono East</option>
+        <option>Northern East</option>
+      </select><br>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>School Details</legend>
+
+      <label for="house">House:</label><br>
+      <input type="text" id="house" name="house" placeholder="e.g. Dr. Eugenia Quist House"><br><br>
+
+      <label for="dorm">Dorm:</label><br>
+      <input type="text" id="dorm" name="dorm" placeholder="Dorm number"><br><br>
+
+      <label for="program_offered"> Program offered:</label><br>
+      <select id="program_offered" name="program_offered" required>
+        <option value="">-- Select program --</option>
+        <option>General Arts</option>
+        <option>General Science</option>
+        <option>Business</option>
+        <option>Home Economics</option>
+        <option>Visual Arts</option>
+      </select><br><br>
+
+      <label for="date_entered">Date entered (start of study):</label><br>
+      <input type="date" id="date_entered" name="date_entered"><br><br>
+
+      <label for="date_completed">Date completed (graduation or leaving):</label><br>
+      <input type="date" id="date_completed" name="date_completed"><br><br>
+
+      <label for="graduation_class">Graduating class / Year:</label><br>
+      <input type="text" id="graduation_class" name="graduation_class" placeholder="e.g. Class of 2024"><br>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Extra information</legend>
+
+      <label for="position_held">Positions held (prefect, sports captain, etc.):</label><br>
+      <input type="text" id="position_held" name="position_held" placeholder="e.g. House Prefect"><br><br>
+
+      <label for="achievements">Notable achievements / Awards:</label><br>
+      <textarea id="achievements" name="achievements" rows="3" placeholder="Briefly list achievements"></textarea><br><br>
+
+      <label for="photo">Upload a passport photo (optional):</label><br>
+      <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+
+      <label for="notes">Additional notes / contact preferences:</label><br>
+      <textarea id="notes" name="notes" rows="4" placeholder="Any extra information you want to share"></textarea><br>
+
+    </fieldset>
+
+    <p>
+      <button type="submit">Register</button>
+      <button type="reset">Reset</button> 
+
+  </form>
+  </main>
+   <footer><article>
+    This is the registration form for my alma mater. 
+     Other Footer Links &reg;
+        <h5><a href="index.html">Home</a>&nbsp;||&nbsp;<a href="meals.html">Meals</a>&nbsp;||&nbsp;<a href="results.html">Results</a>&nbsp;||&nbsp;<a href="schoolform.html">SchoolForm</a>&nbsp;||&nbsp;<a href="timetable.html">TimeTable</a>&nbsp;</h5>
+   </article></footer>
+</body>
+</html>

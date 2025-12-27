@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Form Data</title>
+        <link rel="stylesheet" href="css/webStyles.css">
+        <link rel="icon" type="image/png" href="pix/Webtech2.png">
+        <style>
+            main{
+                width:99vw;
+                margin:0.25vh 0.5vw;
+                padding:0.25vw;
+            }
+            label{
+                display: inline-block;
+                width:30%;
+            }
+            .req{
+              border-right-style:solid;
+              border-right-width:5px;
+              border-right-color:red ;
+            }
+            .in-text{ 
+                margin-bottom: 3px;
+                width: 60%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>Working with Form Data</h2>
+        </header>
+         <nav>
+        <ul>
+          <a href="index1.html"><span><li>Home</li></span></a>
+          <a href="list.html"><li>List</li></a>
+          <li><a href="images.html">Images</li></a>
+          <li><a href="tables.html">Table</a></li>
+          <a href="media.html"><li>Media</li></a>
+          <a href="layout.html"><li>Layout</li></a>
+          <a href="form.html"><li>Form</li></a>
+        </ul>
+      </nav>
+      <main>
+        <form action="" method="GET">
+            <label for="sname">Surname:</label>
+            <input type="text" name="sname" class="in-text req" required
+            placeholder="Enter your Surname"
+            title="This textbox is for student Surname"/><br/>
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" class="in-text req" required
+            placeholder="Enter First Name" /><br/>
+            <label for="onames">Other Names:</label>
+            <input type="text" name="oames" id="onames" class="in-text"
+            placeholder="Enter Other Names"> <br>
+            <fieldset>
+                <legend>Gender</legend>
+                <input type="radio" name="gender" id="fGender" value="FEMALE">
+                <label for="fGender">Female</label><br>
+                <input type="radio" name="gender" id="mGender" value="MALE">
+                <label for="mGender">MALE</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Select All Sports You Like</legend>
+                <input type="checkbox" name="fsports" id="fball"
+                value="football"><label for="fball">FOOTBALL</label><br>
+                <input type="checkbox" name="fsports" id="vball"
+                value="volleyball"><label for="vball">VOLLEYBALL</label><br>
+                <input type="checkbox" name="fsports" id="ltenis"
+                value="lawntennis"><label for="ltenis">LAWNTENNIS</label><br>
+                <input type="checkbox" name="fsports" id="ttenis"
+                value="tennisball"><label for="ttenis">TABLETENNIS</label><br>
+            </fieldset>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob" max="2025-12-01"
+            class="in-text req" required><br>
+           <label for="religion">Religion</label>
+            <select name="religion" class="in-text" id="">
+                <option value="Christian">Christian</option>
+                <option value="Islam">Islam</option>
+                <option value="Budhist">Budhist</option>
+                <option value="Traditionalist">Traditionalist</option>
+                <option value="others">Others...</option>
+            </select><br/>
+            <label for="hgt">Height(m):</label>
+            <input type="number" class="in-text" name="hgt" step="0.01" min="0" max="3.0"><br>
+            <label for="wgt">Weight:</label>
+            <input type="number" class="in-text" name="wgt" step="0.05" min="0.5"><br>
+            <label for="emailAdd">E- Mail:</label>
+            <input type="email" name="emailAdd" class="in-text req"
+            required><br>
+            <label for="phn">Phone Number:</label>
+            <input type="tel" name="phn" class="in-text"><br>
+            <label for="fcolor">Favorite Color:</label>
+            <input type="color" name="fColor"><br>
+            <label for="noSib">Number of Siblings:</label>
+            <input type="number" min="0" step="1" name="noSib"/>
+            <label for="wassceR">WASSCE RESULTS:</label>
+            <input type="file" accept="pdf"/><br/>
+            <label for="com">ANY COMMENT:</label>
+            <textarea name="com" id="" cols="50" rows="10"></textarea><br/>
+            <button type="submit">REGISTER</button>
+       </form>
+      </main>
+
+        <footer><article>
+            <h3>Developed by IT GROUP 4 &reg;&trade;</h3>
+       Other Footer Links &reg;
+        <h5><a href="index1.html">HOME</a>&nbsp;||&nbsp;<a href="list.html">List</a>&nbsp;||&nbsp;<a href="images.html">Images</a>&nbsp;||&nbsp;<a href="tables.html">Tables</a>&nbsp;||&nbsp;<a href="media.html">Media</a>&nbsp;||&nbsp;<a href="layout.html">Layout</a>&nbsp;||&nbsp;<a href="form.html">Form</a>&nbsp;</h5>
+    </article></footer>
+      
+    </body>
+</html>
