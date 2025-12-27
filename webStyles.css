@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+header{
+    border-width: 2px 5px;
+    border-style: solid;
+    border-color: blueviolet;
+    width: 99vw;
+    height:auto;
+    min-height: 100px;
+    background-color: bisque;
+    text-align: center;
+    margin: 0.5vw 0.5vw 0vw 0.5vw;
+    padding-bottom: 10px;
+}
+footer,
+nav {
+    border-style: solid;
+    border-color: blue;
+    border-width: 2px 5px;
+    background-color:coral;
+    float: left;
+    width:99vw;
+    margin-left: 0.5vw;
+    margin-right:0.5vw;
+    height:auto;
+    min-height: 10vh;
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+    border-radius: 5px;
+}
+aside{
+    width: 15vw;
+    float: left; 
+    border:2px solid blueviolet;
+    background-color: darkgoldenrod;
+    height:auto;
+    min-height:70vh;
+    margin-left: 0.5vw;
+    border-radius: 5px 0 0 5px;
+}
+main{
+    width:60vw;
+    height:auto;
+    min-height:70vh;
+    margin-left: 0.25vw;
+    margin-right: 0.25vw;
+    float: left;
+    background-color: burlywood;
+}
+nav li:hover{
+    background-color: aqua;
+    color: #ee000e;
+
+}
+section{
+    width: 21.20vw;
+    float: left;
+    height: auto;
+    min-height: 70vh;
+    background-color: beige;
+    margin-right: 0.5vw;
+    border-radius:0 5px 5px 0;
+}
+article{
+    width: 98%;
+    height: 23vh;
+    float: left;
+    background-color: chocolate;
+    margin-bottom: 0.2%;
+}
+footer{
+    width: 98vw;
+    background-color: azure;
+    color: cyan;
+    font-size: x-large;
+    font-style: italic ;
+    font-weight: bold;
+    height: auto;
+    min-height: 15vh;
+    float:left;
+    text-align: center;
+    margin: 0.25vh 0.5vw 0;
+    border-radius: 5px 5px 0 0;
+}
+nav li{
+  display: inline-block;
+  width: 12%;
+  list-style-type: none;
+  background-color: #ffe1ff;
+ 
+  margin-top: 0.25vh;
+}
+nav a{
+     text-decoration: none;
+}
+a>li{
+    font-weight: bolder;
+    color: #ee000e;
+}
+@media only screen and(max-width:768px){
+    aside,
+    section{
+        display: none;
+    }
+    main{
+        width:98vw;
+        margin:0 0.25vw;
+    }
+    nav li{
+        width:80%;
+        margin: 0.25vh 5%;
+        height:auto;
+        min-height: 5vh;
+    }
+    @media only screen and( (min-width: 600px) and (max-width:992px)){
+        aside,
+        section{
+            display: none;
+        }
+
+    }
+
+};
